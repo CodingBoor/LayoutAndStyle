@@ -13,11 +13,29 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <TextView
+                android:text="普通矩形"
+                android:background="@drawable/shape_rectangle"
+                style="@style/rectangle_item" />
+
+            <TextView
+                android:background="@drawable/shape_rectangle_padding"
+                style="@style/rectangle_item"
+                android:text="有边距得矩形"/>
+
+            <TextView
+                style="@style/rectangle_item"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangle_gradient"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/colorBlack"
+                android:text="渐变矩形"/>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

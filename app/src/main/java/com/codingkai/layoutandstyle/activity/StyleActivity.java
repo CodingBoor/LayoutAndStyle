@@ -34,7 +34,7 @@ public class StyleActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_rectangle:
-//                startActivity(new Intent(StyleActivity.this,));
+                startActivity(new Intent(StyleActivity.this,RectangleActivity.class));
                 break;
             case R.id.tv_oval:
                 break;
