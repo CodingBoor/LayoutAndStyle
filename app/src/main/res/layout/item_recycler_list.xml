@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#575e96"
+        android:gravity="center"
+        android:text="hahaha" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#de7a7a"
+        android:gravity="center"
+        android:text="hahaha" />
+
+</LinearLayout>

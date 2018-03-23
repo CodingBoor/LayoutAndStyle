@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.codingkai.layoutandstyle.activity.RecycleActivity;
 import com.codingkai.layoutandstyle.activity.StyleActivity;
 
 import butterknife.BindView;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, StyleActivity.class));
                 break;
             case R.id.id_tyle2:
-                startActivity(new Intent(MainActivity.this, StyleActivity.class));
+                startActivity(new Intent(MainActivity.this, RecycleActivity.class));
                 break;
         }
     }

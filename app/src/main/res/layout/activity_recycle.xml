@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.codingkai.layoutandstyle.activity.RecycleActivity">
     <TextView
-        android:id="@+id/double_rechcler"
+        android:id="@+id/double_recycler"
         style="@style/main_item_style"
         android:text="DoubleRecycler"/>
 
