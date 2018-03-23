@@ -3,6 +3,7 @@ package com.codingkai.layoutandstyle;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import com.codingkai.layoutandstyle.activity.StyleActivity;
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.id_tyle)
     TextView idTyle;
+    @BindView(R.id.id_tyle2)
+    TextView idTyle2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +26,15 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.id_tyle)
-    public void onViewClicked() {
-        startActivity(new Intent(MainActivity.this,StyleActivity.class));
+    @OnClick({R.id.id_tyle, R.id.id_tyle2})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.id_tyle:
+                startActivity(new Intent(MainActivity.this, StyleActivity.class));
+                break;
+            case R.id.id_tyle2:
+                startActivity(new Intent(MainActivity.this, StyleActivity.class));
+                break;
+        }
     }
 }

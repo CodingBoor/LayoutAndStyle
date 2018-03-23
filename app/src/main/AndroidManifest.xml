@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.StyleActivity" />
-        <activity android:name=".activity.RectangleActivity"></activity>
+        <activity android:name=".activity.RectangleActivity" />
+        <activity android:name=".activity.RecycleActivity" />
+        <activity android:name=".activity.DoubleRecycleActivity"></activity>
     </application>
 
 </manifest>
