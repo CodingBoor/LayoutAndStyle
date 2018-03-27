@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.id_tyle:
+
                 startActivity(new Intent(MainActivity.this, StyleActivity.class));
                 break;
             case R.id.id_tyle2:
